@@ -15,7 +15,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: adhig93/nodejs-feedback
+      - image: ashray333/node-fb:V_11
         imagePullPolicy: Always
         name: nodejs
         ports:
@@ -33,7 +33,7 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 31300
+    nodePort: 30300
   selector:
     app: webapp
   type: NodePort
